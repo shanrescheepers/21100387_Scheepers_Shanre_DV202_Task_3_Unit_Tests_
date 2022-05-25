@@ -5,10 +5,11 @@ import LoginForm from './LoginForm';
 
 describe("Testing a login component...", () => {
 
-    test("Inputs are empty on first render...", () => { 
+    test("Inputs are empty on first render...", () => {
         //1) Render component
         render(<LoginForm />);
         //2) Query Inputs
+        // maak n form, maak inputs vir useremailinput en userpasswordinput
         const emailInput = screen.getByLabelText(/email/i);
         const passwordInput = screen.getByLabelText(/password/i);
         //3) Assert Empty
@@ -45,7 +46,7 @@ describe("Testing a login component...", () => {
         const emailInput = screen.getByLabelText(/email/i);
         userEvent.type(emailInput, "johndoe");
         //click submit button
-        const button = screen.getByRole("button", {type: 'submit'})
+        const button = screen.getByRole("button", { type: 'submit' })
         userEvent.click(button)
         //see if error shows
         const emailErrorText = screen.getByText(/Invalid email/i);
@@ -58,7 +59,7 @@ describe("Testing a login component...", () => {
         const passwordInput = screen.getByLabelText(/password/i);
         userEvent.type(passwordInput, "john");
         //click submit button
-        const button = screen.getByRole("button", {type: 'submit'})
+        const button = screen.getByRole("button", { type: 'submit' })
         userEvent.click(button)
         //see if error shows
         const passwordErrorText = screen.getByText(/Password less than 6 characters/i);
@@ -73,7 +74,7 @@ describe("Testing a login component...", () => {
         userEvent.type(emailInput, "johndoe@mail.com");
         userEvent.type(passwordInput, "john@123");
         //click submit button
-        const button = screen.getByRole("button", {type: 'submit'})
+        const button = screen.getByRole("button", { type: 'submit' })
         userEvent.click(button)
         //see if error shows
         const emailErrorText = screen.queryByText(/Invalid email/i);

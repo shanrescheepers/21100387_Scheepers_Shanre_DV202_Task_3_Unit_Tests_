@@ -1,7 +1,16 @@
 .App {
   text-align: center;
 }
-
+.login{
+  background: rgb(240,242,249);
+     background: linear-gradient(302deg, rgba(240, 242, 249, 0.775) 0%, rgba(231, 215, 231, 0.792) 18%, rgb(227, 237, 245) 42%, rgba(235, 150, 243, 0.399) 59%, rgb(179, 220, 240) 75%);
+  height: 300px;
+  width: 600px;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 30px;
+  margin-left: 25%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
