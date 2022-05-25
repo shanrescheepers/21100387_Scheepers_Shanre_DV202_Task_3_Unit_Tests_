@@ -136,6 +136,7 @@ function LoginForm() {
 }
 
 export default LoginForm;
+// EVERYTHING COMMENTED OUT WAS THE TRIALS AND ERRORS THAT ONLY ALLOWED FOR 4 UNIT TEST PASSES
 {/* 
             inputEmailError &&
             <label htmlFor="email" className="error">Email Error</label> */}
